@@ -12,4 +12,8 @@ class Wftest < Formula
     bin.install "main"
     puts "test tap demo installed"
   end
+
+  test do
+    system "false"
+  end
 end
