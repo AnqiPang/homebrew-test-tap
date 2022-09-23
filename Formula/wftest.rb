@@ -14,6 +14,6 @@ class Wftest < Formula
   end
 
   test do
-    system "false"
+    assert_match "Hello, demo", , shell_output("#{bin}/main")
   end
 end
